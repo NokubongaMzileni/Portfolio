@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: movie-recommender
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python your_file_name.py"
+    envVars:
+      - key: SECRET_KEY
+        value: 7f4f3697f8640a5cab3390285e12e13a2729865b4d8c20456226e1955306d79e
